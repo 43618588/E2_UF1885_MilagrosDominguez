@@ -33,8 +33,15 @@
 ## 2. Monitorización de procesos y detección de sobrecarga
 ### 2.1 Proceso problemático detectado
 - Proceso/servicio:
+  - Contenedor de postgres-dev-UF1884 (servicio postgreSQL para ERP/CRM)
+  - Proceso interno forzado por el sistema: yes > /dev/null & (generador carga CPU)
 - Datos y justificación:
+  - CPU %:(postgres-dev-UF1884): 11548.91%, indica saturación
+  - Consumo de memoria bajo ( 109.3MiB / 10.81GiB)
+  - Saqturación se produce a nivel del CPU
 - Impacto en el CRM:
+  - Lentitud extrema en operaciones que dependen de la base de datos.
+  - Usuarios perciben bloqueos y esperas prolongadas.
 
 ---
 
