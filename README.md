@@ -87,7 +87,7 @@
 ## 5. Documentación y registro técnico
 ### 5.1 Incidencias detectadas / Acciones / Resultados
 ### 5.2 Interpretación de documentación en inglés (monitorización / rendimiento / administración CRM)
-- Fragmento 1 (EN):
+- Fragmento 1 (EN): “Docker provides built-in commands to monitor container resource usage, including CPU, memory, and network I/O, which helps identify performance bottlenecks.”
 - Interpretación (ES):
 - Fragmento 2 (EN):
 - Interpretación (ES):
