@@ -66,10 +66,21 @@
 
 ## 4. Simulación de saturación del sistema (CPU o Memoria)
 - Técnica utilizada:
+  Simulación saturación de memoria RAM mediante ejecución de un proceso que consume gran cantidad de memoria,
+  provocando una reducción importante de la memoria libre 
 - Datos capturados:
+  free -h->antes y después de la simulación
+  vmstat 1 5 antes y después de la simulación   
 - Análisis:
+  Análisis de la simulación disponia de 8,9Gi de memoria libre. Tras la simulación, la memoria libre es de 1,1Gi el sistema no ha llegado a nivel crítico, pero si a un escenario
+  de riesgo 
 - Verificación requisitos HW/SW:
+  El sistema cuenta con 10 Gib RAM y no tiene swap configurada.
+  Para entornos ERP/CRM con carga recurrente esta configuración puede ser insuficiente en picos de consumo de memoria.
+       Aumentar memoria RAM disponible, o
+       configurar swap comop medida preventiva.
 - Registro:
+  La simulación se realizó de forma controlada y reversible sin pérdida de datos.
 
 ---
 
